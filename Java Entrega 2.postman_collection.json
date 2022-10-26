@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "2b409947-ba3c-435e-a7e6-10d13f3b8715",
+		"name": "Java Entrega 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20331035"
+	},
+	"item": [
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "Read All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/productos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"productos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/productos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"productos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"sku\": \"aaa111222a\",\r\n        \"descripcion\": \"Silla gamer 4\",\r\n        \"precio_compra\": 2000.0,\r\n        \"precio_venta\": 2500.0,\r\n        \"stock\": 10,\r\n        \"ultima_compra\": \"2022-10-25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"sku\": \"YYYYYYYYY\",\r\n        \"descripcion\": \"Silla gamer 3453\",\r\n        \"precio_compra\": 2000.0,\r\n        \"precio_venta\": 2500.0,\r\n        \"stock\": 10,\r\n        \"ultima_compra\": \"2022-10-25\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/productos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"productos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/productos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"productos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Read All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Juanito\",\r\n    \"apellido\": \"Torres\",\r\n    \"dni\": 1057587963,\r\n    \"fechaNacimiento\": \"1991-09-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Juanito\",\r\n    \"apellido\": \"Torres\",\r\n    \"dni\": 1057587963,\r\n    \"fechaNacimiento\": \"1991-09-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/clientes/36",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"clientes",
+								"36"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ventas",
+			"item": [
+				{
+					"name": "Read All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/ventas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"ventas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/ventas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"ventas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaVenta\": \"2022-10-12\",\r\n    \"total\": 50.0,\r\n    \"cliente\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/ventas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"ventas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaVenta\": \"2022-10-11T05:00:00.000+00:00\",\r\n    \"total\": 10,\r\n    \"cliente\": {\r\n        \"id\": 4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/ventas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"ventas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/ventas/99",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"ventas",
+								"99"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Detalle Venta",
+			"item": [
+				{
+					"name": "Read All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/detalleventa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"detalleventa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/detalleventa/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"detalleventa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
